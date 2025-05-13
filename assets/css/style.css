@@ -1,0 +1,151 @@
+/* Custom styles for Inventory Management System */
+
+/* General styling */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+/* Navbar styling */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Card customization */
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+    font-weight: 500;
+}
+
+/* Dashboard cards */
+.dashboard-card {
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-card .display-4 {
+    font-weight: 600;
+}
+
+/* Table customization */
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.075);
+}
+
+.table th {
+    font-weight: 600;
+}
+
+/* Button styling */
+.btn {
+    border-radius: 0.3rem;
+}
+
+.btn-sm {
+    border-radius: 0.2rem;
+}
+
+/* Form styling */
+.form-label {
+    font-weight: 500;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25);
+}
+
+/* Footer styling */
+.footer {
+    margin-top: auto;
+    background-color: #f8f9fa;
+    padding: 1.5rem 0;
+    box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .dashboard-card {
+        margin-bottom: 1rem;
+    }
+    
+    .btn-sm {
+        padding: 0.25rem 0.4rem;
+        font-size: 0.7rem;
+    }
+}
+
+/* Custom badge colors */
+.badge.bg-pending {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+/* Animation for alerts */
+.alert {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Item detail view */
+.item-detail-row {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.item-detail-row:last-child {
+    border-bottom: none;
+}
+
+/* Search form styling */
+.search-form .input-group {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Category badges */
+.category-badge {
+    background-color: #e9ecef;
+    color: #495057;
+    padding: 0.35em 0.65em;
+    border-radius: 0.25rem;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+/* Quantity indicators */
+.quantity-low {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.quantity-medium {
+    color: #ffc107;
+    font-weight: bold;
+}
+
+.quantity-good {
+    color: #198754;
+    font-weight: normal;
+}
